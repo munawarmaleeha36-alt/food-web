@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub - Deliciously Curated Foods</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">FoodieHub</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cart.html" class="cart-btn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Deliciously Curated Foods for Every Diet and Lifestyle</h1>
+                <p>Discover mouthwatering dishes crafted with fresh ingredients, perfect for any occasion.</p>
+                <button class="primary-button" onclick="scrollToCategories()">Explore Categories</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop" alt="Featured Burger">
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Explore Our Categories</h2>
+            <div class="category-cards">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=200&fit=crop" alt="Fresh Bites">
+                    <h3>Fresh Bites</h3>
+                    <p>Light and healthy options</p>
+                    <button class="explore-btn" onclick="window.location.href='categories.html'">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=300&h=200&fit=crop" alt="Tasty Meals">
+                    <h3>Tasty Meals</h3>
+                    <p>Comforting and satisfying</p>
+                    <button class="explore-btn" onclick="window.location.href='categories.html'">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=200&fit=crop" alt="Flavor Feast">
+                    <h3>Flavor Feast</h3>
+                    <p>Exotic and adventurous</p>
+                    <button class="explore-btn" onclick="window.location.href='categories.html'">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-foods">
+        <div class="container">
+            <h2>Featured Foods</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop" alt="Pizza">
+                    <h4>Margherita Pizza</h4>
+                    <p>$12.99</p>
+                    <button class="add-button" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="Salad">
+                    <h4>Caesar Salad</h4>
+                    <p>$8.99</p>
+                    <button class="add-button" onclick="addToCart(4)">Add to Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=300&h=200&fit=crop" alt="Burger">
+                    <h4>Classic Burger</h4>
+                    <p>$10.99</p>
+                    <button class="add-button" onclick="addToCart(5)">Add to Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop" alt="Pasta">
+                    <h4>Carbonara Pasta</h4>
+                    <p>$14.99</p>
+                    <button class="add-button" onclick="addToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comfort-food">
+        <div class="container">
+            <h2>Comfort Food - Slow Cooker Specials</h2>
+            <div class="comfort-cards">
+                <div class="large-card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Slow Cooker Stew">
+                    <h3>Beef Stew</h3>
+                    <p>$16.99</p>
+                    <button class="add-button" onclick="addToCart(7)">Order Now</button>
+                </div>
+                <div class="large-card">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop" alt="Chicken Curry">
+                    <h3>Chicken Curry</h3>
+                    <p>$15.99</p>
+                    <button class="add-button" onclick="addToCart(8)">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-by-category">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Vegetarian</button>
+                <button class="filter-btn">Vegan</button>
+                <button class="filter-btn">Gluten-Free</button>
+                <button class="filter-btn">Keto</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FoodieHub</h4>
+                    <p>Delivering deliciousness to your doorstep.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - FoodieHub</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">FoodieHub</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cart.html" class="cart-btn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Amazing Deals & Offers</h1>
+            <p>Don't miss out on our limited-time promotions and special discounts</p>
+        </div>
+    </section>
+
+    <section class="deals-content">
+        <div class="container">
+            <div class="deals-grid">
+
+                <div class="deal-card">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop" alt="Burger Deal">
+                    <div class="deal-badge">50% OFF</div>
+                    <div class="card-content">
+                        <h3>Burger Bonanza</h3>
+                        <p class="original-price">$20.00</p>
+                        <p class="deal-price">$10.00</p>
+                        <p>Enjoy our signature burger with fries and a drink at half price. Limited time offer!</p>
+                        <button class="deal-btn" onclick="addToCart(2)">Claim Deal</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Pizza Deal">
+                    <div class="deal-badge">Buy 1 Get 1</div>
+                    <div class="card-content">
+                        <h3>Mighty Burger</h3>
+                        <p class="original-price">$24.99</p>
+                        <p class="deal-price">$18.99</p>
+                        <p>Perfect for sharing!</p>
+                        <button class="deal-btn" onclick="addToCart(5)">Claim Deal</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Dessert Deal">
+                    <div class="deal-badge">30% OFF</div>
+                    <div class="card-content">
+                        <h3>Dessert Paradise</h3>
+                        <p class="original-price">$16.99</p>
+                        <p class="deal-price">$11.89</p>
+                        <p>Fulfilling sweet tooth cravings</p>
+                        <button class="deal-btn" onclick="addToCart(3)">Claim Deal</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Stew Deal">
+                    <div class="deal-badge">Free Delivery</div>
+                    <div class="card-content">
+                        <h3>Comfort Food Special</h3>
+                        <p class="original-price">$18.99</p>
+                        <p class="deal-price">$18.99</p>
+                        <p>Slow-cooked beef stew with free delivery on orders over $15. Cozy up tonight!</p>
+                        <button class="deal-btn" onclick="addToCart(7)">Claim Deal</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Smoothie Deal">
+                    <div class="deal-badge">Bundle Deal</div>
+                    <div class="card-content">
+                        <h3>Healthy Bundle</h3>
+                        <p class="original-price">$15.00</p>
+                        <p class="deal-price">$12.00</p>
+                        <p>Salad, smoothie, and wrap combo at a special bundle price. Stay healthy!</p>
+                        <button class="deal-btn" onclick="addToCart(4)">Claim Deal</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FoodieHub</h4>
+                    <p>Delivering deliciousness to your doorstep.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
